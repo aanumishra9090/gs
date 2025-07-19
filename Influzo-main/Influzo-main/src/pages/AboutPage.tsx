@@ -181,7 +181,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
                     ? 'opacity-100 translate-y-0' 
                     : 'opacity-0 translate-y-10'
                 }`}
-                style={{ transitionDelay: ${index * 100}ms }}
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="w-12 h-12 bg-gradient-to-r from-[#5e2ccf] to-[#a259ff] rounded-lg flex items-center justify-center mb-4">
                   <item.icon className="w-6 h-6 text-white" />
