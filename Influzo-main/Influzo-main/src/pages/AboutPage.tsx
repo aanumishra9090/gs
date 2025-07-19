@@ -232,7 +232,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
                     ? 'opacity-100 translate-x-0' 
                     : 'opacity-0 translate-x-10'
                 }`}
-                style={{ transitionDelay: ${index * 200}ms }}
+                style={{ transitionDelay: `${index * 200}ms` }}
               >
                 <div className="flex-shrink-0">
                   <CheckCircle className="w-8 h-8 text-[#a259ff]" />
