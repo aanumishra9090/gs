@@ -61,9 +61,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
 
       <section data-section="hero" className="py-20 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={text-center transition-all duration-1000 ${
+          <div className={`text-center transition-all duration-1000 ${
             isVisible('hero') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }}>
+          }`}>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               About{' '}
               <span className="bg-gradient-to-r from-[#5e2ccf] to-[#a259ff] bg-clip-text text-transparent">
@@ -81,9 +81,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
       <section data-section="story" className="py-20 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className={transition-all duration-1000 ${
+            <div className={`transition-all duration-1000 ${
               isVisible('story') ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
-            }}>
+            }`}>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Our Story
               </h2>
@@ -106,9 +106,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
               </div>
             </div>
             
-            <div className={relative transition-all duration-1000 ${
+            <div className={`relative transition-all duration-1000 ${
               isVisible('story') ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-            }}>
+            }`}>
               <div className="bg-[#1a1a1a] p-8 rounded-2xl shadow-xl border border-gray-800">
                 <div className="w-full h-64 bg-gradient-to-br from-[#5e2ccf]/20 to-[#a259ff]/20 rounded-xl mb-6 flex items-center justify-center overflow-hidden">
                   <img 
@@ -130,9 +130,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
       {/* Why Choose Us Section */}
       <section data-section="why-choose" className="py-20 bg-[#1a1a1a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={text-center mb-16 transition-all duration-1000 ${
+          <div className={`text-center mb-16 transition-all duration-1000 ${
             isVisible('why-choose') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }}>
+          }`}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why Partner With Influzo Media?
             </h2>
@@ -176,11 +176,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
             ].map((item, index) => (
               <div 
                 key={index}
-                className={bg-[#0a0a0a] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-700 transform hover:-translate-y-2 border border-gray-800 hover:border-[#a259ff]/50 ${
+                className={`bg-[#0a0a0a] p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-700 transform hover:-translate-y-2 border border-gray-800 hover:border-[#a259ff]/50 ${
                   isVisible('why-choose') 
                     ? 'opacity-100 translate-y-0' 
                     : 'opacity-0 translate-y-10'
-                }}
+                }`}
                 style={{ transitionDelay: ${index * 100}ms }}
               >
                 <div className="w-12 h-12 bg-gradient-to-r from-[#5e2ccf] to-[#a259ff] rounded-lg flex items-center justify-center mb-4">
@@ -197,9 +197,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
       {/* Our Values Section */}
       <section data-section="values" className="py-20 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={text-center mb-16 transition-all duration-1000 ${
+          <div className={`text-center mb-16 transition-all duration-1000 ${
             isVisible('values') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }}>
+          }`}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Core Values</h2>
             <p className="text-xl text-[#d0d0d0] max-w-3xl mx-auto">
               These principles guide everything we do and shape how we work with our clients and team members.
@@ -227,11 +227,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
             ].map((value, index) => (
               <div 
                 key={index}
-                className={flex items-start space-x-4 transition-all duration-700 ${
+                className={`flex items-start space-x-4 transition-all duration-700 ${
                   isVisible('values') 
                     ? 'opacity-100 translate-x-0' 
                     : 'opacity-0 translate-x-10'
-                }}
+                }`}
                 style={{ transitionDelay: ${index * 200}ms }}
               >
                 <div className="flex-shrink-0">
@@ -250,18 +250,18 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
       {/* Partners Section */}
       <section data-section="partners" className="py-20 bg-[#1a1a1a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={text-center mb-16 transition-all duration-1000 ${
+          <div className={`text-center mb-16 transition-all duration-1000 ${
             isVisible('partners') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }}>
+          }`}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Partners, Certifications & Awards</h2>
             <p className="text-xl text-[#d0d0d0] max-w-3xl mx-auto">
               Trusted partnerships and industry recognition that validate our expertise and commitment to excellence.
             </p>
           </div>
           
-          <div className={transition-all duration-1000 ${
+          <div className={`transition-all duration-1000 ${
             isVisible('partners') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }}>
+          }`}>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
               <img
                 src="https://cdn.worldvectorlogo.com/logos/hubspot.svg"
@@ -301,9 +301,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ navigateTo }) => {
       {/* CTA Section */}
       <section data-section="cta" className="py-20 bg-gradient-to-br from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className={transition-all duration-1000 ${
+          <div className={`transition-all duration-1000 ${
             isVisible('cta') ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }}>
+          }`}>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to Work With Us?
             </h2>
