@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
                 <div>
                   <p className="text-sm text-[#a0a0a0]">WhatsApp:</p>
                   <a href="https://wa.me/917732972282" className="hover:text-[#a259ff] transition-colors">
-                    +91 7732972282
+                    +91 84500 44308
                   </a>
                 </div>
               </div>
