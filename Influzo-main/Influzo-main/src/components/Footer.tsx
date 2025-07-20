@@ -100,7 +100,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
           {/* Company Description Section */}
          
              <div>
-            <div className=
+            
               
                 
                 
