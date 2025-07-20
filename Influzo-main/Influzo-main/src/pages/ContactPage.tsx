@@ -87,7 +87,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ navigateTo }) => {
           <h3 className="text-2xl font-bold mb-8 text-white">Connect With Us</h3>
           <div className="flex justify-center gap-6">
             <a
-              href="https://www.facebook.com/share/19ECXgNcQs/"
+              href="Facebooklink"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-[#a259ff] rounded-full flex items-center justify-center hover:bg-[#8a4bff] transition-colors duration-300"
@@ -103,7 +103,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ navigateTo }) => {
               <Twitter className="text-white" size={20} />
             </a>
             <a
-              href="link"
+              href="Instagramlink"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-[#a259ff] rounded-full flex items-center justify-center hover:bg-[#8a4bff] transition-colors duration-300"
@@ -111,7 +111,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ navigateTo }) => {
               <Instagram className="text-white" size={20} />
             </a>
             <a
-              href="https://www.linkedin.com/in/gaurishankarbajpai"
+              href="LinkedInLink"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-[#a259ff] rounded-full flex items-center justify-center hover:bg-[#8a4bff] transition-colors duration-300"
