@@ -159,9 +159,9 @@ const HomePage: React.FC<HomePageProps> = ({ navigateTo }) => {
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl lg:mx-0 mx-auto">
               {[
-                { number: "500+", label: "Happy Clients" },
+                { number: "50+", label: "Happy Clients" },
                 { number: "98%", label: "Success Rate" },
-                { number: "300%", label: "Avg ROI Increase" },
+                { number: "90%", label: "Avg ROI Increase" },
                 { number: "24/7", label: "Support" }
               ].map((stat, index) => (
                 <div 
