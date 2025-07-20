@@ -23,28 +23,44 @@ const HomePage: React.FC<HomePageProps> = ({ navigateTo }) => {
 
   const testimonials = [
     {
-      name: "Evelyn",
-      role: "Founder",
-      company: "Thamaara",
+      name: "Priya Sharma",
+      role: "Founder & CEO",
+      company: "TechVision Solutions",
       rating: 5,
-      text: "Jayesh Uchadiya and his team have done good job in developing my website. Answered all questions very promptly. Overall very happy with their work.",
-      avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+      text: "Influzo Media transformed our digital presence completely. Their strategic approach and innovative solutions helped us achieve 250% growth in online sales within 6 months. Exceptional team!",
+      avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
     },
     {
-      name: "Richard Thompson",
-      role: "CEO",
-      company: "TechStart Inc",
+      name: "Rajesh Kumar",
+      role: "Managing Director",
+      company: "Kumar Enterprises",
       rating: 5,
-      text: "Exceptional service and outstanding results. The team delivered beyond our expectations and helped transform our digital presence completely.",
-      avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+      text: "Working with Influzo Media was a game-changer for our business. Their digital marketing strategies increased our lead generation by 300%. Professional, reliable, and results-driven team.",
+      avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
     },
     {
-      name: "Sarah devra",
-      role: "Marketing Director",
-      company: "GrowthCorp",
+      name: "Anita Patel",
+      role: "Co-Founder",
+      company: "Digital Innovations Pvt Ltd",
       rating: 5,
-      text: "Professional, reliable, and innovative. Their digital marketing strategies increased our online visibility by 300% in just 6 months.",
-      avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+      text: "Outstanding service and exceptional results! Influzo Media's team delivered beyond our expectations. Their SEO and social media strategies boosted our online presence tremendously.",
+      avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+    },
+    {
+      name: "Vikram Singh",
+      role: "Business Owner",
+      company: "Singh Trading Co.",
+      rating: 5,
+      text: "Influzo Media created a stunning website for our business and managed our social media perfectly. Their team is highly professional and delivers quality work on time. Highly recommended!",
+      avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+    },
+    {
+      name: "Meera Gupta",
+      role: "Director",
+      company: "Gupta Fashion House",
+      rating: 5,
+      text: "The team at Influzo Media understood our vision perfectly and brought it to life. Their creative designs and marketing strategies helped us reach new customers and grow our brand significantly.",
+      avatar: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
     }
   ];
 
@@ -70,6 +86,15 @@ const HomePage: React.FC<HomePageProps> = ({ navigateTo }) => {
 
     return () => observer.disconnect();
   }, []);
+
+  // Auto-slide testimonials every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
 
   const nextTestimonial = () => {
     setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
