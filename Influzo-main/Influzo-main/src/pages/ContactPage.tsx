@@ -103,7 +103,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ navigateTo }) => {
               <Twitter className="text-white" size={20} />
             </a>
             <a
-              href="https://www.instagram.com/bvc_gaurishankar.bajpai?igsh=MTZzZzA5NXFhNnR5eA=="
+              href="link"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-[#a259ff] rounded-full flex items-center justify-center hover:bg-[#8a4bff] transition-colors duration-300"
