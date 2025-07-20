@@ -99,8 +99,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
 
           {/* Company Description Section */}
          
-             <div>
-            
+        
               
                 
                 
@@ -116,7 +115,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
               At Influzo Media, the best digital marketing company, we pride ourselves on helping businesses unlock their true potential. From small startups to established enterprises, our tailored strategies deliver measurable success.
             </p>
           </div>
-        </div>
+        
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8">
