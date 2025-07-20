@@ -101,7 +101,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
          
              <div>
             <div className="flex items-center mb-6">
-              <div
+              
                 
                 
                  <img 
