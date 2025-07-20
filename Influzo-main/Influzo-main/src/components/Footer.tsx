@@ -18,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
                 <Phone className="w-5 h-5 mr-3 text-[#a259ff]" />
                 <div>
                   <p className="text-sm text-[#a0a0a0]">Call:</p>
-                  <a href="tel:+91 84500 44308" className="hover:text-[#a259ff] transition-colors">
+                  <a href="tel:+918450044308" className="hover:text-[#a259ff] transition-colors">
                     +91 84500 44308
                   </a>
                 </div>
