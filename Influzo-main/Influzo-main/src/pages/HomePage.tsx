@@ -306,8 +306,8 @@ const HomePage: React.FC<HomePageProps> = ({ navigateTo }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { icon: Users, value: 500, label: "Happy Clients", suffix: "+" },
-              { icon: Target, value: 1200, label: "Projects Completed", suffix: "+" },
+              { icon: Users, value: 50, label: "Happy Clients", suffix: "+" },
+              { icon: Target, value: 120, label: "Projects Completed", suffix: "+" },
               { icon: Award, value: 5, label: "Years Experience", suffix: "+" },
               { icon: TrendingUp, value: 98, label: "Success Rate", suffix: "%" }
             ].map((stat, index) => (
