@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
                 <div>
                   <p className="text-sm text-[#a0a0a0]">Email:</p>
                   <a href="mailto:info@marketingmonks.online" className="hover:text-[#a259ff] transition-colors">
-                    info@marketingmonks.online
+                    businesswithjayesh09@gmail.com
                   </a>
                 </div>
               </div>
