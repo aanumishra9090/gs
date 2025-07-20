@@ -99,8 +99,6 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
 
           {/* Company Description Section */}
          <div>
-            <div className="flex items-center mb-6">
-              
                 <img 
   src="/influzo-logo.png" 
   alt="Influzo Media Logo" 
