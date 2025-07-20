@@ -106,7 +106,7 @@ const Footer: React.FC<FooterProps> = ({ navigateTo }) => {
       alt="Influzo Media Logo" 
       className="w-12 h-12 object-contain rounded-lg mr-3"
     />
-              </div>
+              
               <span className="text-lg font-bold text-white">Influzo Media</span>
             </div>
             <p className="text-[#d0d0d0] leading-relaxed">
